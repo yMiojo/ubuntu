@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  ubuntu:
+    image: ubuntu:latest
+    container_name: ubuntu-linux
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./estudos:/estudos
+    command: /bin/bash
